@@ -667,22 +667,23 @@
 .audiences {
   background-color: rgba(0, 161, 198, 0.0705882353);
   padding: 50px 15px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 110px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
-@media screen and (max-width: 1399px) {
+@media screen and (min-width: 1400px) {
   .audiences {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-.audiences__text {
-  display: flex;
-  flex-direction: column;
-  width: 555px;
+@media screen and (min-width: 1400px) {
+  .audiences__text {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+  }
 }
 .audiences__subtitle {
   margin: 0;
@@ -709,33 +710,44 @@
   margin-top: 18px;
   margin-bottom: 18px;
 }
-.audiences__buttons {
-  display: flex;
-  flex-direction: row;
+@media screen and (min-width: 1400px) {
+  .audiences__buttons {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .audiences-btn {
   width: 100%;
   margin-top: 12px;
 }
-.audiences__images {
-  display: flex;
-  flex-direction: row;
-  margin: 100px;
+@media screen and (min-width: 1400px) {
+  .audiences__images {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+  }
 }
 .audiences__square {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 15px;
   background-color: #fff;
-  display: flex;
-  width: 262px;
-  height: 300px;
-  margin: 0%;
-  margin-left: 30px;
-  align-items: center;
-  justify-content: center;
 }
 .audiences__square:nth-child(2) {
   background-color: #3141c5;
+}
+@media screen and (min-width: 1400px) {
+  .audiences__square {
+    display: flex;
+    width: 262px;
+    height: 300px;
+    margin: 0%;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .audiences__caption {
   font-weight: 700;
@@ -746,10 +758,10 @@
   color: #2b292d;
 }
 .audiences__caption-secondary {
-  color: #fff;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
+  color: #fff;
 }
 .audiences__image {
   margin-top: 22px;
